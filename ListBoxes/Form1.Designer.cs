@@ -218,6 +218,7 @@
             this.btnSortHeroes.TabIndex = 57;
             this.btnSortHeroes.Text = "Sort";
             this.btnSortHeroes.UseVisualStyleBackColor = false;
+            this.btnSortHeroes.Click += new System.EventHandler(this.btnSortHeroes_Click);
             // 
             // btnNewHeroes
             // 
@@ -231,6 +232,7 @@
             this.btnNewHeroes.TabIndex = 56;
             this.btnNewHeroes.Text = "New List";
             this.btnNewHeroes.UseVisualStyleBackColor = false;
+            this.btnNewHeroes.Click += new System.EventHandler(this.btnNewHeroes_Click);
             // 
             // btnSortNumbers
             // 
@@ -244,6 +246,7 @@
             this.btnSortNumbers.TabIndex = 55;
             this.btnSortNumbers.Text = "Sort";
             this.btnSortNumbers.UseVisualStyleBackColor = false;
+            this.btnSortNumbers.Click += new System.EventHandler(this.btnSortNumbers_Click);
             // 
             // btnNewNumbers
             // 
@@ -257,6 +260,7 @@
             this.btnNewNumbers.TabIndex = 54;
             this.btnNewNumbers.Text = "New List";
             this.btnNewNumbers.UseVisualStyleBackColor = false;
+            this.btnNewNumbers.Click += new System.EventHandler(this.btnNewNumbers_Click);
             // 
             // frmMain
             // 
@@ -285,6 +289,7 @@
             this.Cursor = System.Windows.Forms.Cursors.Default;
             this.Name = "frmMain";
             this.Text = "Using Lists";
+            this.Load += new System.EventHandler(this.frmMain_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
