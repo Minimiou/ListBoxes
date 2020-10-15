@@ -55,6 +55,7 @@ namespace ListBoxes
 
         private void btnNewNumbers_Click(object sender, EventArgs e)
         {
+            btnRemoveNumber.Enabled = true;
             numbers.Clear();
             for (int i = 0; i < 30; i++)
             {
@@ -73,6 +74,57 @@ namespace ListBoxes
             lstHeroes.DataSource = null;
             lstHeroes.DataSource = heroes;
             lblStatus.Text = "Status: new heroes list";
+        }
+
+        private void btnRemoveNumber_Click(object sender, EventArgs e)
+        {
+
+            if (numbers.Count > 1)
+            {
+                numbers.Remove((Int32)lstNumbers.SelectedItem);
+                lstNumbers.DataSource = null;
+                lstNumbers.DataSource = numbers;
+                lblStatus.Text = "Status: number removed";
+            }
+            else if (numbers.Count <= 1)
+            {
+                lblStatus.Text = "Status: Cannot remove\nanymore numbers";
+                btnRemoveNumber.Enabled = false;
+            }
+
+        }
+//lstHeroes.Remove((Int32)txtRemoveHero.Text);
+        private void btnRemoveAllNumbers_Click(object sender, EventArgs e)
+        {
+            int num = (Int32)lstNumbers.SelectedItem;
+
+            while (numbers.Remove(num))
+            {
+                 
+            }
+            lblStatus.Text = $"Status: {30 - numbers.Count} numbers were removed";
+            lstNumbers.DataSource = null;
+            lstNumbers.DataSource = numbers;
+
+        }
+
+        private void btnRemoveHero_Click(object sender, EventArgs e)
+        {
+            string deletehero = txtRemoveHero.Text;
+            if (heroes.Contains(deletehero))
+            {
+                while (heroes.Remove(deletehero))
+                {
+                    lblStatus.Text = $"Status: hero was removed";
+                }
+            }
+            else
+            {
+                lblStatus.Text = $"Status: that is an \ninvalid hero";
+            }
+
+            lstHeroes.DataSource = null;
+            lstHeroes.DataSource = heroes;
         }
     }
 }

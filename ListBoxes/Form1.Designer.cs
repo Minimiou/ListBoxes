@@ -54,12 +54,13 @@
             this.btnRemoveHero.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRemoveHero.Font = new System.Drawing.Font("Monotype Corsiva", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRemoveHero.ForeColor = System.Drawing.Color.SlateBlue;
-            this.btnRemoveHero.Location = new System.Drawing.Point(353, 267);
+            this.btnRemoveHero.Location = new System.Drawing.Point(386, 266);
             this.btnRemoveHero.Name = "btnRemoveHero";
-            this.btnRemoveHero.Size = new System.Drawing.Size(98, 29);
+            this.btnRemoveHero.Size = new System.Drawing.Size(102, 29);
             this.btnRemoveHero.TabIndex = 71;
             this.btnRemoveHero.Text = "Remove";
             this.btnRemoveHero.UseVisualStyleBackColor = false;
+            this.btnRemoveHero.Click += new System.EventHandler(this.btnRemoveHero_Click);
             // 
             // btnAddHero
             // 
@@ -67,9 +68,9 @@
             this.btnAddHero.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAddHero.Font = new System.Drawing.Font("Monotype Corsiva", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAddHero.ForeColor = System.Drawing.Color.SlateBlue;
-            this.btnAddHero.Location = new System.Drawing.Point(364, 206);
+            this.btnAddHero.Location = new System.Drawing.Point(397, 204);
             this.btnAddHero.Name = "btnAddHero";
-            this.btnAddHero.Size = new System.Drawing.Size(83, 29);
+            this.btnAddHero.Size = new System.Drawing.Size(87, 29);
             this.btnAddHero.TabIndex = 70;
             this.btnAddHero.Text = "Add";
             this.btnAddHero.UseVisualStyleBackColor = false;
@@ -78,18 +79,18 @@
             // 
             this.txtAddHero.Font = new System.Drawing.Font("Monotype Corsiva", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtAddHero.ForeColor = System.Drawing.Color.SlateBlue;
-            this.txtAddHero.Location = new System.Drawing.Point(229, 204);
+            this.txtAddHero.Location = new System.Drawing.Point(262, 204);
             this.txtAddHero.Name = "txtAddHero";
-            this.txtAddHero.Size = new System.Drawing.Size(129, 29);
+            this.txtAddHero.Size = new System.Drawing.Size(133, 29);
             this.txtAddHero.TabIndex = 69;
             // 
             // txtRemoveHero
             // 
             this.txtRemoveHero.Font = new System.Drawing.Font("Monotype Corsiva", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtRemoveHero.ForeColor = System.Drawing.Color.SlateBlue;
-            this.txtRemoveHero.Location = new System.Drawing.Point(229, 266);
+            this.txtRemoveHero.Location = new System.Drawing.Point(262, 266);
             this.txtRemoveHero.Name = "txtRemoveHero";
-            this.txtRemoveHero.Size = new System.Drawing.Size(118, 29);
+            this.txtRemoveHero.Size = new System.Drawing.Size(122, 29);
             this.txtRemoveHero.TabIndex = 68;
             // 
             // lblRemoveInstructions
@@ -97,7 +98,7 @@
             this.lblRemoveInstructions.AutoSize = true;
             this.lblRemoveInstructions.Font = new System.Drawing.Font("Monotype Corsiva", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblRemoveInstructions.ForeColor = System.Drawing.Color.SlateBlue;
-            this.lblRemoveInstructions.Location = new System.Drawing.Point(227, 242);
+            this.lblRemoveInstructions.Location = new System.Drawing.Point(260, 242);
             this.lblRemoveInstructions.Name = "lblRemoveInstructions";
             this.lblRemoveInstructions.Size = new System.Drawing.Size(238, 22);
             this.lblRemoveInstructions.TabIndex = 67;
@@ -122,10 +123,11 @@
             this.btnRemoveAllNumbers.ForeColor = System.Drawing.Color.SlateBlue;
             this.btnRemoveAllNumbers.Location = new System.Drawing.Point(107, 204);
             this.btnRemoveAllNumbers.Name = "btnRemoveAllNumbers";
-            this.btnRemoveAllNumbers.Size = new System.Drawing.Size(108, 29);
+            this.btnRemoveAllNumbers.Size = new System.Drawing.Size(112, 29);
             this.btnRemoveAllNumbers.TabIndex = 65;
             this.btnRemoveAllNumbers.Text = "Remove All";
             this.btnRemoveAllNumbers.UseVisualStyleBackColor = false;
+            this.btnRemoveAllNumbers.Click += new System.EventHandler(this.btnRemoveAllNumbers_Click);
             // 
             // btnRemoveNumber
             // 
@@ -135,17 +137,18 @@
             this.btnRemoveNumber.ForeColor = System.Drawing.Color.SlateBlue;
             this.btnRemoveNumber.Location = new System.Drawing.Point(12, 204);
             this.btnRemoveNumber.Name = "btnRemoveNumber";
-            this.btnRemoveNumber.Size = new System.Drawing.Size(89, 29);
+            this.btnRemoveNumber.Size = new System.Drawing.Size(93, 29);
             this.btnRemoveNumber.TabIndex = 64;
             this.btnRemoveNumber.Text = "Remove";
             this.btnRemoveNumber.UseVisualStyleBackColor = false;
+            this.btnRemoveNumber.Click += new System.EventHandler(this.btnRemoveNumber_Click);
             // 
             // lblAddInstructions
             // 
             this.lblAddInstructions.AutoSize = true;
             this.lblAddInstructions.Font = new System.Drawing.Font("Monotype Corsiva", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblAddInstructions.ForeColor = System.Drawing.Color.SlateBlue;
-            this.lblAddInstructions.Location = new System.Drawing.Point(227, 179);
+            this.lblAddInstructions.Location = new System.Drawing.Point(260, 179);
             this.lblAddInstructions.Name = "lblAddInstructions";
             this.lblAddInstructions.Size = new System.Drawing.Size(211, 22);
             this.lblAddInstructions.TabIndex = 63;
@@ -168,9 +171,9 @@
             this.lstHeroes.ForeColor = System.Drawing.Color.SlateBlue;
             this.lstHeroes.FormattingEnabled = true;
             this.lstHeroes.ItemHeight = 22;
-            this.lstHeroes.Location = new System.Drawing.Point(229, 74);
+            this.lstHeroes.Location = new System.Drawing.Point(262, 74);
             this.lstHeroes.Name = "lstHeroes";
-            this.lstHeroes.Size = new System.Drawing.Size(204, 92);
+            this.lstHeroes.Size = new System.Drawing.Size(208, 92);
             this.lstHeroes.TabIndex = 61;
             // 
             // lstNumbers
@@ -181,7 +184,7 @@
             this.lstNumbers.ItemHeight = 22;
             this.lstNumbers.Location = new System.Drawing.Point(12, 74);
             this.lstNumbers.Name = "lstNumbers";
-            this.lstNumbers.Size = new System.Drawing.Size(203, 92);
+            this.lstNumbers.Size = new System.Drawing.Size(207, 92);
             this.lstNumbers.TabIndex = 60;
             // 
             // lblHeroes
@@ -189,7 +192,7 @@
             this.lblHeroes.AutoSize = true;
             this.lblHeroes.Font = new System.Drawing.Font("Monotype Corsiva", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblHeroes.ForeColor = System.Drawing.Color.SlateBlue;
-            this.lblHeroes.Location = new System.Drawing.Point(227, 12);
+            this.lblHeroes.Location = new System.Drawing.Point(260, 12);
             this.lblHeroes.Name = "lblHeroes";
             this.lblHeroes.Size = new System.Drawing.Size(63, 22);
             this.lblHeroes.TabIndex = 59;
@@ -212,9 +215,9 @@
             this.btnSortHeroes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSortHeroes.Font = new System.Drawing.Font("Monotype Corsiva", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSortHeroes.ForeColor = System.Drawing.Color.SlateBlue;
-            this.btnSortHeroes.Location = new System.Drawing.Point(340, 39);
+            this.btnSortHeroes.Location = new System.Drawing.Point(373, 39);
             this.btnSortHeroes.Name = "btnSortHeroes";
-            this.btnSortHeroes.Size = new System.Drawing.Size(93, 29);
+            this.btnSortHeroes.Size = new System.Drawing.Size(97, 29);
             this.btnSortHeroes.TabIndex = 57;
             this.btnSortHeroes.Text = "Sort";
             this.btnSortHeroes.UseVisualStyleBackColor = false;
@@ -226,9 +229,9 @@
             this.btnNewHeroes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnNewHeroes.Font = new System.Drawing.Font("Monotype Corsiva", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnNewHeroes.ForeColor = System.Drawing.Color.SlateBlue;
-            this.btnNewHeroes.Location = new System.Drawing.Point(229, 39);
+            this.btnNewHeroes.Location = new System.Drawing.Point(262, 39);
             this.btnNewHeroes.Name = "btnNewHeroes";
-            this.btnNewHeroes.Size = new System.Drawing.Size(93, 29);
+            this.btnNewHeroes.Size = new System.Drawing.Size(97, 29);
             this.btnNewHeroes.TabIndex = 56;
             this.btnNewHeroes.Text = "New List";
             this.btnNewHeroes.UseVisualStyleBackColor = false;
@@ -242,7 +245,7 @@
             this.btnSortNumbers.ForeColor = System.Drawing.Color.SlateBlue;
             this.btnSortNumbers.Location = new System.Drawing.Point(122, 39);
             this.btnSortNumbers.Name = "btnSortNumbers";
-            this.btnSortNumbers.Size = new System.Drawing.Size(93, 29);
+            this.btnSortNumbers.Size = new System.Drawing.Size(97, 29);
             this.btnSortNumbers.TabIndex = 55;
             this.btnSortNumbers.Text = "Sort";
             this.btnSortNumbers.UseVisualStyleBackColor = false;
@@ -256,7 +259,7 @@
             this.btnNewNumbers.ForeColor = System.Drawing.Color.SlateBlue;
             this.btnNewNumbers.Location = new System.Drawing.Point(12, 39);
             this.btnNewNumbers.Name = "btnNewNumbers";
-            this.btnNewNumbers.Size = new System.Drawing.Size(93, 29);
+            this.btnNewNumbers.Size = new System.Drawing.Size(97, 29);
             this.btnNewNumbers.TabIndex = 54;
             this.btnNewNumbers.Text = "New List";
             this.btnNewNumbers.UseVisualStyleBackColor = false;
@@ -267,7 +270,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.PaleTurquoise;
-            this.ClientSize = new System.Drawing.Size(469, 316);
+            this.ClientSize = new System.Drawing.Size(502, 324);
             this.Controls.Add(this.btnRemoveHero);
             this.Controls.Add(this.btnAddHero);
             this.Controls.Add(this.txtAddHero);
