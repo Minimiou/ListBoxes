@@ -110,7 +110,9 @@ namespace ListBoxes
 
         private void btnRemoveHero_Click(object sender, EventArgs e)
         {
-            string deletehero = txtRemoveHero.Text;
+            txtRemoveHero.Text = txtRemoveHero.Text.Trim();
+            string deletehero = (txtRemoveHero.Text);
+
             if (heroes.Contains(deletehero))
             {
                 while (heroes.Remove(deletehero))
@@ -125,6 +127,36 @@ namespace ListBoxes
 
             lstHeroes.DataSource = null;
             lstHeroes.DataSource = heroes;
+            txtRemoveHero.Clear();
+        }
+
+        private void btnAddHero_Click(object sender, EventArgs e)
+        {
+            txtAddHero.Text = txtAddHero.Text.Trim();
+            string addhero = txtAddHero.Text;
+            
+            if (!heroes.Contains(addhero))
+            {
+                heroes.Add(addhero);
+                lblStatus.Text = $"Status: hero has been \nadded to the list";
+
+            }
+            else
+            {
+                lblStatus.Text = $"Status: this hero is \nalready in the list";
+            }
+            if (txtAddHero.Text.Equals(""))
+            {
+                lblStatus.Text = "This is an invalid hero";
+                if (heroes.Contains(""))
+                {
+                    heroes.Remove("");
+                }
+
+            }
+            lstHeroes.DataSource = null;
+            lstHeroes.DataSource = heroes;
+            txtAddHero.Clear();
         }
     }
 }

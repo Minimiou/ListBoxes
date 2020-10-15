@@ -74,6 +74,7 @@
             this.btnAddHero.TabIndex = 70;
             this.btnAddHero.Text = "Add";
             this.btnAddHero.UseVisualStyleBackColor = false;
+            this.btnAddHero.Click += new System.EventHandler(this.btnAddHero_Click);
             // 
             // txtAddHero
             // 
